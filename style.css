@@ -1,3 +1,7 @@
+* {
+    font-family: "Times New Roman";
+}
+
 body,
 html {
     margin: 0;
@@ -7,8 +11,66 @@ html {
     line-height: 1.5em;
 }
 
+header {
+    background: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > img {
+    border-radius: 50%;
+}
+
+header > h1 {
+    color: white;
+}
+
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+li {
+    float: left;
+    margin-inline-end: 8px;
+}
+
+li > a {
+    color: white;
+}
+
+#description {
+    background: aliceblue;
+    padding: 60px;
+    overflow: auto;
+}
+
+#description > img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.description-p2 {
+    clear: both;
+}
+
+#relationship {
+    padding: 60px;
+}
+
+#relationship > img {
+    float: right;
+    margin-left: 20px;
+}
+
+footer {
+    background: lightgray;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    clear: both;
 }
